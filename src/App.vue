@@ -3,16 +3,16 @@
     
     <navbar @search="searchKeyword"></navbar>
   
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-9">
-        <inventory @newItemAdded="addCartItem" :items="items"></inventory>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-9">
+          <inventory @newItemAdded="addCartItem" :items="items"></inventory>
+        </div>
+        <div class="col-sm-3">
+          <cart @itemRemoved="removeCartItem" :items="cart"></cart>
+        </div>
       </div>
-      <div class="col-sm-3">
-        <cart @itemRemoved="removeCartItem" :items="cart"></cart>
-      </div>
-  </div>
-  </div>
+    </div>
   </div>
 </template>
 
