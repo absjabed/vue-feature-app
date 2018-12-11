@@ -1,13 +1,14 @@
-import Hello from '../components/Hello.vue'
-import Test from '../components/Test.vue'
+import ItemDetails from '../components/views/ItemDetails.vue'
+import Test from '../components/views/Test.vue'
+import Inventory from '../components/views/Inventory.vue'
 
 export const routes = [
     {
         path: '',
-        component: Hello
+        component: Inventory
     },
     {
-        path: '/test/:id',
-        component: Test
+        path: '/item/:id',
+        component: ItemDetails
     }
 ]
