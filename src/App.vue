@@ -1,7 +1,12 @@
 <template>
   <div id="app">
-    
-    <navbar @search="searchKeyword"></navbar>
+  
+  <router-link :to="{path: '/'}">Home</router-link>
+  <router-link :to="{path: '/test/1'}">Test1</router-link>
+  <router-link :to="{path: '/test/2'}">Test2</router-link>
+    <router-link :to="{path: '/test/3'}">Test3</router-link>
+    <router-view></router-view>
+    <!-- <navbar @search="searchKeyword"></navbar>
   
     <div class="container">
       <div class="row">
@@ -12,7 +17,7 @@
           <cart @itemRemoved="removeCartItem" :items="cart"></cart>
         </div>
       </div>
-    </div>
+    </div> -->
   </div>
 </template>
 
