@@ -33,8 +33,8 @@ export default {
                 self.item = response.data
             })
         },
-        addToCart(){
-            
+        addToCart(item){
+            this.$store.commit('addToCart', item)
         }
     }
 }
