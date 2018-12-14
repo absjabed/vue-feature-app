@@ -28,8 +28,8 @@ export default {
             axios.get('http://localhost:3000/search/'+this.keyword).then(response => {
                 //self.items = response.data
                 //self.loading = false
-                console.log(response)
-
+                //console.log(response)
+                self.$store.commit('setInventory', response.data)
             })
     }
   }
