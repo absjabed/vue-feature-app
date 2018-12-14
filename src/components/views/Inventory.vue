@@ -32,7 +32,8 @@ export default {
     methods:{
         addToCart(item){
             //console.log(item.price);
-            this.$emit('newItemAdded', item)
+            //this.$emit('newItemAdded', item)
+            this.$store.commit('addToCart', item)
         },
         fetchInventory(){
             var self = this

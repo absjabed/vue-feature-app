@@ -20,7 +20,7 @@
 
 <script>
 export default {
-  props: ['items'], 
+  //props: ['items'], 
   computed: {
     totalPrice(){
       var total = 0
@@ -29,6 +29,9 @@ export default {
         total += parseFloat(item.price)
       })
       return total
+    },
+    items(){
+      return this.$store.getters.getCart
     }
   },
   methods:{
