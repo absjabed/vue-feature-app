@@ -6,8 +6,10 @@
         <div class="col-sm-6">
             <h4>{{item.title}}</h4>
             <p>{{item.description}}</p>
+            <div class="card-footer">
             <span class="card-text">£{{item.price}}</span>
             <a @click="addToCart(item)" class="btn btn-sm btn-primary float-right">+ add</a>
+            </div>
         </div>
     </div>
     <div v-else>Loading...</div>
