@@ -2,6 +2,11 @@
 
 > super-store test vue demo...
 
+![homevue](https://user-images.githubusercontent.com/13753347/50738285-64acfc80-11fc-11e9-9c9e-2dfef5d58916.JPG)
+
+
+![homevue2](https://user-images.githubusercontent.com/13753347/50738289-6b3b7400-11fc-11e9-9ca9-169c1c1dba3f.JPG)
+
 ## Build Setup
 
 ``` bash
